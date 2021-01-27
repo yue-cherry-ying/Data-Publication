@@ -7,3 +7,16 @@ h1 {
     font-size: 50px;
     color: coral
 }
+
+
+/* both visited and unvisited links are going to be the same color */
+
+a:visited,
+a:link {
+    color: rgb(230, 197, 50);
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
