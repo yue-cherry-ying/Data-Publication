@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
+    <meta charset="utf-8">
+
+    <!-- Connect Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+    <!-- Connect Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Connect Bootstrap JavaScript and its dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Connect to my own CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Make it responsive to small screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Hello World!</title>
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/proxy/CjiIye97GD1nh9UJOap1_i19aYFeoe-p2DsHHRXECf9rHfFVVe4jtWDnE5V1-gU7fhV2mtMdOAxz1Cwage5HSIeKW6tui60">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-secondary">
+        <a class="navbar-brand" href="https://www.google.com">
+            <span class="h2 font-weight-bold">HelloWorld</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Careers
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://careers.google.com/teams/">Departments</a></li>
+                    <li><a class="dropdown-item" href="https://www.facebook.com/careers/locations">Locations</a></li>
+                    <li><a class="dropdown-item" href="https://careers.google.com/life-at-google/">Life at HelloWorld</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="https://www.facebook.com/careers/students-and-grads/students">University</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">News</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="https://www.google.com">
+                    <i class="fa fa-shopping-bag fa-lg"></i>
+                </a>
+            </li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.owox.com/pages/articles/4/4880.png" class="d-block w-100" alt="website1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Website Layout</h5>
+                    <p>Layout for articles.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.owox.com/pages/articles/4/4867.png" class="d-block w-100" alt="website2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Website Layout</h5>
+                    <p>Layout for headline news.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.owox.com/pages/articles/4/4883.png" class="d-block w-100" alt="website3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Website Layout</h5>
+                    <p>Layout for profile image.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+    <section class="how-to-helloworld py-6">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="mb-2">
+                        Start Creating Your Website
+                    </h2>
+
+                    <p>
+                        With bootstrap, you will find making a beatufil website is just a piece of cake.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="https://themeforest.img.customer.envatousercontent.com/files/270268226/scr/Banner.__large_preview.png?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=b627ede2dacee5c002a4701de2d78969" class="rounded-circle spotlight-image">
+
+                    <h4 class="h6 font-weight-bold">
+                        Stunning Templates
+                    </h4>
+
+                    <p>
+                        Choose from over 500 designer-made templates for every business.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="https://themeforest.img.customer.envatousercontent.com/files/306507146/01_preview_image.png?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=ee66a854da450ab7431880d698ecf03f" class="rounded-circle spotlight-image">
+
+                    <h4 class="h6 font-weight-bold">
+                        Mobile Friendly
+                    </h4>
+
+                    <p>
+                        Look amazing on every screen with a mobile-friendly version of your website.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="https://themeforest.img.customer.envatousercontent.com/files/269355343/preview.__large_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=a257f49da3e298df5d89f680023cea2f" class="rounded-circle spotlight-image">
+
+                    <h4 class="h6 font-weight-bold">
+                        Custom Domains
+                    </h4>
+
+                    <p>
+                        Get a personalized domain name that matches your brand and business.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="sound-bites bg-light py-6">
+        <div class="container-fluid">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2>
+                        Sound bites
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="media">
+                        <img src="https://blog.linkedin.com/content/dam/blog/en-us/corporate/blog/2014/07/Anais_Saint-Jude_L4388_SQ.jpg.jpeg" class="rounded-circle user-image mr-3">
+
+                        <div class="media-body">
+                            <p>
+                                @HelloWorld I love you, HelloWorld! Just made my first navbar, and I tell you, you folks make that part of my life easy. Thanks!
+                            </p>
+
+                            <h4 class="media-heading">
+                                @xtinacousins
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="media">
+                        <img src="https://lavinephotography.com.au/wp-content/uploads/2017/01/PROFILE-Photography-112.jpg" class="rounded-circle user-image mr-3">
+                        <div class="media-body">
+                            <p>
+                                Made my first @HelloWorld website today. So great to be able to create website and not have to take any advanced CS courses.
+                            </p>
+
+                            <h4 class="media-heading">
+                                @udezekene
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="media">
+                        <img src="https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg" class="rounded-circle user-image mr-3">
+
+                        <div class="media-body">
+                            <p>
+                                Shout out to HelloWorld for making my life so so easy.
+                            </p>
+
+                            <h4 class="media-heading">
+                                @adellecharles
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="media">
+                        <img src="https://www.msmu.edu/media/website/content-assets/msmuedu/home/caw/speakers/Asha_HeadShot_Square---Edited.jpg" class="rounded-circle user-image mr-3">
+
+                        <div class="media-body">
+                            <p>
+                                Seriously, @HelloWorld makes it easy for my coworkers and I to make a website and get it published. Yay!
+                            </p>
+
+                            <h4 class="media-heading">
+                                @vista
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-secondary text-white py-6">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 offset-md-1 col-8 offset-2 mb-5">
+                    <h4 class="h6 font-weight-bold">Sign up for special offers</h4>
+
+                    <form>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="zip_code" class="sr-only">Zip Code</label>
+                            <input type="number" class="form-control" id="zip_code" placeholder="Zip code">
+                        </div>
+
+                        <button class="btn btn-dark btn-block">Send me discounts</button>
+                    </form>
+                </div>
+
+                <div class="col-md-2 offset-md-1 col-8 offset-2 mb-5">
+                    <h4 class="h6 font-weight-bold">Get to know us</h4>
+
+                    <ul class="list-unstyled">
+                        <li>About HelloWorld</li>
+                        <li>Our apps</li>
+                        <li>Our blog</li>
+                        <li>Careers</li>
+                        <li>Investor relations</li>
+                        <li>News</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 offset-md-1 col-8 offset-2 mb-5">
+                    <h4 class="h6 font-weight-bold">Help</h4>
+
+                    <ul class="list-unstyled">
+                        <li>FAQ</li>
+                        <li>Contact us</li>
+                    </ul>
+
+                    <h4 class="h6 font-weight-bold">Connect with us</h4>
+
+                    <ul class="list-unstyled">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 offset-md-1 col-8 offset-2 mb-5">
+                    <h4 class="h6 font-weight-bold">Partner with us</h4>
+
+                    <ul class="list-unstyled">
+                        <li>For investors</li>
+                        <li>For individuals</li>
+                        <li>For corporate accounts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

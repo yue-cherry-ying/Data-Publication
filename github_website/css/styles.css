@@ -1,0 +1,48 @@
+.py-6 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+body {
+    padding-top: 64px;
+    font-family: "Montserrat";
+}
+
+.spotlight-image {
+    width: 200px;
+}
+
+.rounded-circle {
+    border-radius: 50%!important;
+}
+
+.user-image {
+    width: 50px;
+}
+
+.mr-3,
+.mx-3 {
+    margin-right: 1rem!important;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+.download-apps {
+    background: url("https://www.macworld.co.uk/cmsdata/features/3688264/how-to-download-apps-on-iphone-or-ipad-main2_thumb800.png") no-repeat center center;
+    background-size: cover;
+}
+
+.store-badge {
+    width: 200px;
+}
