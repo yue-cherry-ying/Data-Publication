@@ -9,42 +9,86 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+    <!-- link to my own CSS -->
+    <link rel="stylesheet" href="css/week4.css">
+
     <title>Digital Chalkboard</title>
 </head>
 
 <body>
     <div class="container">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Data</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">CSVs</a>
+                    <a class="dropdown-item" href="#">Python</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Publications</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Obsolete</a>
+            </li>
+        </ul>
         <h1 class="d-none d-md-block">Digital Chalkboard February 02, 2021</h1>
         <div class="d-md-none">Digital Chalkboard February 02, 2021</div>
-
-        <p> Digital Chalkboard Tasks </p>
-        <p>Comment out this section before you get started.</p>
-        <p class="h3">**First: make sure you've caught up from last week's tasks**</p>
-        <ol>
-            <li>Create a Bootstrap container so the body of the page behaves well. </li>
-            <li>Create a navigation section. Your choice of style. </li>
-            <li>This site has an h1 heading. Can you figure out how to display the text in a regular div on a screen that is narrower than 768px? </li>
-            <li>Insert a new container and row as the home for four columns. </li>
-            <li>Add some text to the columns. Cf. https://www.lipsum.com/. Make sure the columns stack on a phone. </li>
-            <li>Create an external CSS file to use with this page. </li>
-            <li>Add a subtle background color behind the columns. Think about the best CSS selector to use!! </li>
-            <li>Check out the Bootstrap documentation to find ways to add some spacing between the columns when they stack up.
-            </li>
-            <li> Be ready to use Inspect mode to check the responsive mode of the site. </li>
-        </ol>
-        <p class="h3">New Tasks for February 02 — Media queries, pseudo-classes</p>
-        <ol>
-            <li>Use a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">@media query</a> to change the text spacing in the columns to justify. On screens wider than the large breakpoint, the text can be display in
-                a normal format. On screens smaller than the large breakpoint, the text in the columns should display as justified.</li>
-            <li>Use CSS to create a <a href="https://en.wikipedia.org/wiki/Initial#Drop_cap">drop cap</a> for the first letter of each paragraph. HINT: you can use a pseudo-class called ::first-letter. You'll likely need the following CSS properties (tweak
-                the values to your liking): color, font-family, font-size, line-height, padding-top, padding-right, padding-left. You'll also need float:left.</li>
-            <li>Create a button on your page to launch a function.</li>
-            <li>Create an external JavaScript file.</li>
-            <li>Write a function to pop up a simple alert message.</li>
-            <li>Use an onclick event to invoke your function.</li>
-
-        </ol>
+        <div class="container">
+            <div class="row align-items-start">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">@media query</a>
+                <div class="col-md p-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et sagittis ligula. Donec in nulla elementum, suscipit lacus vel, iaculis lacus. Maecenas quis hendrerit diam, et dignissim diam. Etiam ullamcorper molestie maximus. Aenean mauris quam, mollis
+                    eu malesuada at, faucibus nec mi. Nullam consequat volutpat neque eget suscipit. Vestibulum feugiat, dolor et tristique laoreet, ante enim consequat nulla, eu tincidunt purus nunc pharetra nulla. Vivamus finibus feugiat lacus. Morbi
+                    hendrerit sollicitudin egestas. Duis vestibulum urna quis mollis finibus. Morbi nec aliquam est, sit amet vehicula magna.
+                </div>
+                <div class="col-md p-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et sagittis ligula. Donec in nulla elementum, suscipit lacus vel, iaculis lacus. Maecenas quis hendrerit diam, et dignissim diam. Etiam ullamcorper molestie maximus. Aenean mauris quam, mollis
+                    eu malesuada at, faucibus nec mi. Nullam consequat volutpat neque eget suscipit. Vestibulum feugiat, dolor et tristique laoreet, ante enim consequat nulla, eu tincidunt purus nunc pharetra nulla. Vivamus finibus feugiat lacus. Morbi
+                    hendrerit sollicitudin egestas. Duis vestibulum urna quis mollis finibus. Morbi nec aliquam est, sit amet vehicula magna.
+                </div>
+                <div class="col-md p-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et sagittis ligula. Donec in nulla elementum, suscipit lacus vel, iaculis lacus. Maecenas quis hendrerit diam, et dignissim diam. Etiam ullamcorper molestie maximus. Aenean mauris quam, mollis
+                    eu malesuada at, faucibus nec mi. Nullam consequat volutpat neque eget suscipit. Vestibulum feugiat, dolor et tristique laoreet, ante enim consequat nulla, eu tincidunt purus nunc pharetra nulla. Vivamus finibus feugiat lacus. Morbi
+                    hendrerit sollicitudin egestas. Duis vestibulum urna quis mollis finibus. Morbi nec aliquam est, sit amet vehicula magna.
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- <p> Digital Chalkboard Tasks </p>
+    <p>Comment out this section before you get started.</p>
+    <p class="h3">**First: make sure you've caught up from last week's tasks**</p>
+    <ol>
+        <li>Create a Bootstrap container so the body of the page behaves well. </li>
+        <li>Create a navigation section. Your choice of style. </li>
+        <li>This site has an h1 heading. Can you figure out how to display the text in a regular div on a screen that is narrower than 768px? </li>
+        <li>Insert a new container and row as the home for four columns. </li>
+        <li>Add some text to the columns. Cf. https://www.lipsum.com/. Make sure the columns stack on a phone. </li>
+        <li>Create an external CSS file to use with this page. </li>
+        <li>Add a subtle background color behind the columns. Think about the best CSS selector to use!! </li>
+        <li>Check out the Bootstrap documentation to find ways to add some spacing between the columns when they stack up.
+        </li>
+        <li> Be ready to use Inspect mode to check the responsive mode of the site. </li>
+    </ol>
+    <p class="h3">New Tasks for February 02 — Media queries, pseudo-classes</p>
+    <ol>
+        <li>Use a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">@media query</a> to change the text spacing in the columns to justify. On screens wider than the large breakpoint, the text
+            can be display in a normal format. On screens smaller than the large breakpoint, the text in the columns should display as justified.</li>
+        <li>Use CSS to create a <a href="https://en.wikipedia.org/wiki/Initial#Drop_cap">drop cap</a> for the first letter of each paragraph. HINT: you can use a pseudo-class called ::first-letter. You'll likely need the following CSS properties (tweak
+            the values to your liking): color, font-family, font-size, line-height, padding-top, padding-right, padding-left. You'll also need float:left.</li>
+        <li>Create a button on your page to launch a function.</li>
+        <li>Create an external JavaScript file.</li>
+        <li>Write a function to pop up a simple alert message.</li>
+        <li>Use an onclick event to invoke your function.</li>
+
+    </ol> -->
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
