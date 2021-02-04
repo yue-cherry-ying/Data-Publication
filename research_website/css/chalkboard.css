@@ -12,3 +12,12 @@ h6 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
+
+.card-text:first-letter {
+    font-family: 'Cardo', serif;
+    float: left;
+    font-size: 3rem;
+    line-height: 0.65;
+    margin: 0.1em 0.1em 0.2em 0;
+    color: #7c1e0e;
+}
