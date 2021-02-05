@@ -84,8 +84,10 @@
 
     <h1 class="text-center mt-4 mb-4" style="color: #7c1e0e;">Digital Chalkboard Exercises</h1>
     <blockquote class="blockquote text-center">
-        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        <p class="mb-4">
+            Truth becomes fiction when the fiction&rsquo;s true; <br> Real becomes not-real where the unreal&rsquo;s real. <br> 假作真时真亦假，无为有处有还无.
+        </p>
+        <footer class="blockquote-footer mb-4">Cao Xueqin, <cite title="Source Title"><strong>Chapter 5</strong></cite></footer>
     </blockquote>
     <div class="container">
         <div class="row">
@@ -159,16 +161,25 @@
             </div>
         </div>
     </div>
-    <div>
-
+    <div class="container mt-4">
+        <button type="button" class="btn" style="color: #7c1e0e; border-color: #7c1e0e; border-radius: 8px;" onclick="currentMinute() ">Get the Current Minute</button>
+        <p style="display: inline-block; padding-left: 10px;"><span id="datetime"></span></p>
     </div>
-    <div class="container mt-4 mb-5">
+    <div class="container mt-4 mb-4">
         <button type="button" class="btn" style="color: white; background-color: #7c1e0e;" onclick=" greeting( 'Cherry') ">Greetings!</button>
         <button type="button" class="btn" style="color: white; background-color: #7c1e0e;" onclick="conditional() ">Conditional</button>
         <button type="button" class="btn" style="color: white; background-color: #7c1e0e;" onclick="variable() ">Variable</button>
         <button type="button" class="btn" style="color: white; background-color: #7c1e0e;" onclick="evalNumber() ">Evaluate Number</button>
         <button type="button" class="btn btn-warning " onclick="changeTitle() ">Change Title</button>
+        <button type="button" class="btn" style="color: white; background-color: #7c1e0e;" onclick="scopeValues() ">Scope Value</button>
+        <button type="button" class="btn" style="color: #7c1e0e; border-color: #7c1e0e; border-radius: 8px;" onclick="disappear() ">Make Footer Disappear</button>
     </div>
+
+    <!-- footer -->
+    <footer id="footer" class="text-center p-3 text-light" style="background-color: #7c1e0e; font-family: 'Oswald', sans-serif; text-transform: uppercase;">
+        © 2021 Copyright
+    </footer>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

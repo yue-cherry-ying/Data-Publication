@@ -97,3 +97,134 @@ h6 {
         grid-row-gap: 100px;
     }
 }
+
+.about-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://wallpaperaccess.com/full/352912.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 0 50px;
+}
+
+.container {
+    max-width: 1172px;
+    margin: 0 auto;
+    padding: 0 10px;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+.heading {
+    padding: 50px 0 40px;
+}
+
+@media (min-width: 768px) {
+    .heading {
+        padding: 45px 0 75px;
+    }
+}
+
+.text {
+    padding: 0 0 9px;
+    max-width: 800px;
+}
+
+@media (min-width: 768px) {
+    .text {
+        padding-left: 7px;
+    }
+}
+
+.blockquote-wrap {
+    padding: 22px 0 20px 20px;
+    max-width: 600px;
+    padding-left: 7px;
+    border-top: 2px solid rgba(178, 194, 143, 0.52);
+}
+
+.text {
+    padding: 0 0 9px;
+    max-width: 800px;
+}
+
+@media (min-width: 768px) {
+    .text {
+        padding-left: 7px;
+    }
+}
+
+.text a {
+    text-decoration: underline;
+}
+
+blockquote {
+    margin: 0 0 40px;
+    line-height: 32px;
+}
+
+@media (min-width: 768px) {
+    blockquote {
+        padding: 9px 25px 10px 40px;
+        margin-bottom: 11px;
+    }
+}
+
+blockquote q {
+    margin-bottom: 10px;
+    vertical-align: top;
+    position: relative;
+}
+
+blockquote q:before {
+    position: absolute;
+    left: -12px;
+}
+
+blockquote cite {
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding-left: 15px;
+    position: relative;
+    color: #f4eb9d;
+}
+
+@media (min-width: 768px) {
+    blockquote cite {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+    }
+}
+
+blockquote cite:before {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    content: '';
+    background-color: #f4eb9d;
+    width: 10px;
+    height: 1px;
+}

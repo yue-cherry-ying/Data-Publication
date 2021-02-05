@@ -36,5 +36,36 @@ function evalNumber() {
 function changeTitle() {
     let selectedElement = document.getElementById("week1Card");
     console.log(selectedElement);
-    selectedElement.innerText = "Week One"
+    selectedElement.innerText = "Week One";
+}
+
+function scopeValues() {
+    if (0 == 0) {
+        var x = 0;
+        var y = 1;
+    } else {
+        alert("Why is 0 not 0?");
+    };
+
+    const z = x;
+    alert("Use Inspect to see the console and inspect the code.")
+    console.log("Check the sources to see this code and study the scope of the declarations.")
+    console.log("Value of x as originally declared: " + x);
+    console.log("Value of y as originally declared: " + y); //"let" is not accessible outside of the if statement code block
+    var x = x + 2;
+    console.log("Value of x + 1: " + x);
+    console.log("Value of z: " + z + " does not change.");
+}
+
+function currentMinute() {
+    var dt = new Date();
+    let selectedElement = document.getElementById("datetime");
+    console.log(selectedElement);
+    selectedElement.innerText = "Today is " + dt.toLocaleDateString() + ", and it is " +
+        dt.toLocaleTimeString() + " now.";
+}
+
+function disappear() {
+    let selectedElement = document.getElementById("footer");
+    selectedElement.style.visibility = "hidden";
 }
