@@ -13,6 +13,17 @@ h6 {
     text-transform: uppercase;
 }
 
+.overlay {
+    background: url(http://img52.imageshack.us/img52/2659/degrade.png) top left no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
 .card-text:first-letter {
     font-family: 'Cardo', serif;
     float: left;
@@ -20,4 +31,60 @@ h6 {
     line-height: 0.65;
     margin: 0.1em 0.1em 0.2em 0;
     color: #7c1e0e;
+}
+
+.card-body {
+    background-color: rgb(201, 198, 198);
+}
+
+@media only screen and (max-width: 768px) {
+    .card-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1em;
+        grid-row-gap: 100px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-container .wordmark-wrapper {
+        margin-bottom: 30px;
+    }
+    .footer-container .wordmark-wrapper img {
+        width: 215px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .footer-container .wordmark-wrapper {
+        margin-bottom: 15px;
+        padding: 0 10px 0 0;
+    }
+    .footer-container .wordmark-wrapper img {
+        width: 100%;
+    }
+}
+
+
+/* fixed footer */
+
+#footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* hide the footer when screen is small */
+
+@media (max-width: 480px) {
+    #foot {
+        display: none;
+        visibility: hidden;
+    }
+    #footer {
+        display: none;
+        visibility: hidden;
+    }
 }
