@@ -69,3 +69,10 @@ function disappear() {
     let selectedElement = document.getElementById("footer");
     selectedElement.style.visibility = "hidden";
 }
+
+
+function lastItem(arrayName) {
+    let selectedElement = document.getElementById("fruit");
+    arrayName.sort();
+    selectedElement.innerText = "The original array is " + arrayName + ", and I sorted it alphabetically. The last item of the sorted array is " + arrayName[arrayName.length - 1];
+}

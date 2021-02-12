@@ -8,7 +8,7 @@
 
     <!-- Connect Font Awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -21,10 +21,10 @@
     <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
 
     <!-- Connect to Bootstrap JQuery -->
-    <script language="JavaScript" type="text/javascript" src="scripts/jquery.js"></script>
+    <!-- <script language="JavaScript" type="text/javascript" src="scripts/jquery.js"></script>
     <script language="JavaScript" type="text/javascript" src="scripts/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
 
     <!-- Connect to my js file -->
     <script src="js/chalkboard.js"></script>
@@ -77,7 +77,7 @@
             <ul class="navbar-nav d-none d-lg-block">
                 <li class="nav-item">
                     <a class="nav-link active" href="index.html">
-                        <i class="fas fa-book-reader fa-lg"></i>
+                        <i class="fa fa-file-text-o fa-lg"></i>
                     </a>
                 </li>
             </ul>
@@ -101,11 +101,11 @@
 
     <!-- carousel -->
     <div id="carouselExampleIndicators" class="carousel slide mb-4" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sun_Wen_Red_Chamber_9.jpg" alt="Dream of Red Chamber Chapter 9">
@@ -132,14 +132,14 @@
             </div>
         </div>
 
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <!-- card: weekly content -->
@@ -219,6 +219,11 @@
         <button type="button" class="btn" style="color: #7c1e0e; border-color: #7c1e0e; border-radius: 8px;" onclick="currentMinute() ">Get the Current Minute</button>
         <p style="display: inline-block; padding-left: 10px;"><span id="datetime"></span></p>
     </div>
+    <div class="container mt-4">
+        <button type="button" class="btn" style="color: white; background-color: #7c1e0e;" onclick="lastItem(['Orange', 'Apple', 'Mango', 'Banana', 'Papaya']) ">Sort Array Items</button>
+        <p id="fruit" style="display: inline-block; padding-left: 10px;"></p>
+    </div>
+
     <div class="container mt-4 mb-4">
         <button type="button" class="btn" style="color: white; background-color: #7c1e0e;" onclick=" greeting( 'Cherry') ">Greetings!</button>
         <button type="button" class="btn" style="color: white; background-color: #7c1e0e;" onclick="conditional() ">Conditional</button>
@@ -227,13 +232,14 @@
         <button type="button" class="btn btn-warning " onclick="changeTitle() ">Change Title</button>
         <button type="button" class="btn" style="color: white; background-color: #7c1e0e;" onclick="scopeValues() ">Scope Value</button>
         <button type="button" class="btn" style="color: #7c1e0e; border-color: #7c1e0e; border-radius: 8px;" onclick="disappear() ">Make Footer Disappear</button>
+
     </div>
 
     <!-- footer -->
-    <footer id="footer" class="text-center p-3 text-light" style="background-color: #7c1e0e; font-family: 'Oswald', sans-serif; text-transform: uppercase;">
+    <footer id="footer " class="text-center p-3 text-light " style="background-color: #7c1e0e; font-family: 'Oswald ', sans-serif; text-transform: uppercase; ">
         © 2021 Copyright
     </footer>
-    <footer id="foot" class="text-white py-6 p-5 " style="background-color: #7c1e0e; ">
+    <footer id="foot " class="text-white py-6 p-5 " style="background-color: #7c1e0e; ">
         <div class="container-fluid footer-container ">
             <div class="row ">
                 <div class="col-md-2 offset-md-1 col-8 offset-2 mb-1 ">
