@@ -76,3 +76,13 @@ function lastItem(arrayName) {
     arrayName.sort();
     selectedElement.innerText = "The original array is " + arrayName + ", and I sorted it alphabetically. The last item of the sorted array is " + arrayName[arrayName.length - 1];
 }
+
+function parentFunction() {
+    let a = 1;
+
+    function childFunction() {
+        var b = a + 2;
+        return b;
+    };
+    return childFunction();
+}
