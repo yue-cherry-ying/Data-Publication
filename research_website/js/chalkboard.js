@@ -78,18 +78,33 @@ function lastItem(arrayName) {
     selectedElement.innerText = "The original array is " + "[" +
         arrayName +
         "], and I sorted it alphabetically. The last item of the sorted array is " +
-        arrayName[arrayName.length - 1];
+        arrayName[arrayName.length - 1] + ".";
 }
 
-function parseArray(array) {
+function parseArray() {
+    let selectedElement = document.getElementById("array");
     var newFruit = prompt("enter a fruit"); //prompt asks for input
-    array.push(newFruit); //.push method adds a value to an array
+    var newAnimal = prompt("enter an animal"); //prompt asks for input
+    var newState = prompt("enter a state"); //prompt asks for input
+    var newCountry = prompt("enter a country"); //prompt asks for input
+
+    var array = []
+    array.push(newFruit.toLowerCase()); //.push method adds a value to an array
+    array.push(newAnimal.toLowerCase()); //.push method adds a value to an array
+    array.push(newState.toLowerCase()); //.push method adds a value to an array
+    array.push(newCountry.toLowerCase()); //.push method adds a value to an array
+
     var x = array.sort(); //.sort method sorts values in an array
-    var y = x.length; //.length method accesses the length of an array
-    console.log(x[y - 1]); //log the last item in the array
+    // var y = x.length; //.length method accesses the length of an array
+    console.log(x); //log the the sorted array
     console.log(array); //log the entire array
+    selectedElement.innerText = "The four items you typed are: " +
+        newFruit + ", " +
+        newAnimal + ", " +
+        newState + ", " +
+        newCountry +
+        ". I lowered all the letters and sorted them alphabetically: " + x
 }
-var newArray = ["papaya", "apple", "orange", "banana"];
 
 function greeting(firstName) {
     alert("Hello " + firstName);
