@@ -13,6 +13,13 @@ h6 {
     text-transform: uppercase;
 }
 
+#title {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
 .carousel {
     width: 80%;
     display: flex!important;

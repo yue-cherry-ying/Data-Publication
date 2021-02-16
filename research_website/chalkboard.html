@@ -265,7 +265,23 @@
         <button type="button " class="btn " style="color: white; background-color: #7c1e0e; " onclick="scopeValues() ">Scope Value</button>
         <button type="button " class="btn " style="color: #7c1e0e; border-color: #7c1e0e; border-radius: 8px; " onclick="disappear() ">Make Footer Disappear</button>
         <button type="button " class="btn btn-warning " onclick="console.log(parentFunction()) ">Nested Functions</button>
+    </div>
 
+    <!-- Wiki API -->
+    <div class="container mt-3">
+        <div id="title">Wiki API Example</div>
+        <!-- user input field -->
+        <form>
+            <div class="row">
+                <div class="col">
+                    <input id="searchTerm" type="text" class="form-control" placeholder="Enter your search term here...">
+                </div>
+            </div>
+        </form>
+        <!-- button to submit search value and invoke JS function -->
+        <button type="submit" class="btn btn-dark my-3" onclick="wikiAPI()">Search</button>
+        <!-- output from JS function loads here -->
+        <div class="container" id="wiki"></div>
     </div>
 
     <!-- footer -->
