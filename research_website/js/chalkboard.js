@@ -43,12 +43,15 @@ function searchMusic() {
                     for (i in jsonContent) {
                         var discographyDiv = document.getElementById('discography');
                         var albumYearDiv = document.createElement('span');
+                        var linebreak = document.createElement('br');
                         albumYearDiv.setAttribute('class', 'h4');
                         albumYearDiv.innerText = jsonContent[i].intYearReleased;
                         var albumNameDiv = document.createElement('span');
                         albumNameDiv.setAttribute('class', 'h4');
                         albumNameDiv.innerText = jsonContent[i].strAlbum;
+                        discographyDiv.appendChild(linebreak); // add line break between each entry
                         discographyDiv.appendChild(albumYearDiv);
+                        discographyDiv.appendChild(document.createTextNode('\u00A0')); // add space between album year and album name
                         discographyDiv.appendChild(albumNameDiv);
                     }
                     // albumDiv.src = jsonContent.strAlbumThumb; // change the src of the albumDiv id
