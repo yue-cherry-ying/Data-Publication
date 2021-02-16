@@ -119,14 +119,18 @@ function variable() {
 
 function evalNumber() {
     var inputValue = Number(prompt("Enter any five-digit number without commas"))
-    if (isNaN(inputValue) || Number.isInteger(inputValue)) { // check to see if the input value is not a number or if is not an integer
-        alert(inputValue + " is not a number or is not an integer.")
-    } else if (inputValue.toString().length != 5) {
-        alert("False! " + inputValue + " is not a whole 5-digit number.")
-    } else if (inputValue % 2 == 0) {
-        alert(inputValue + " is an even number.")
+    if (Number.isInteger(inputValue)) { // check to see if the input value is not an integer
+        if (isNaN(inputValue)) { // check to see if the input value is not a number
+            alert(inputValue + " is not a number.")
+        } else if (inputValue.toString().length != 5) {
+            alert("False! " + inputValue + " is not a whole 5-digit number.")
+        } else if (inputValue % 2 == 0) {
+            alert(inputValue + " is an even number.")
+        } else {
+            alert(inputValue + " is an odd number.")
+        }
     } else {
-        alert(inputValue + " is an odd number.")
+        alert(inputValue + " is not an integer.")
     }
 }
 
@@ -172,7 +176,7 @@ function parentFunction() {
 function wikiAPI() {
     var searchTerm = document.getElementById('searchTerm').value;
     var connect = new XMLHttpRequest();
-    var url = "https: //en.wikipedia.org/w/api.php?action=query&origin=*&format=json&generator=search&gsrnamespace=0&gsrlimit=20&gsrsearch=" + searchTerm;
+    var url = "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&generator=search&gsrnamespace=0&gsrlimit=20&gsrsearch=" + searchTerm;
     connect.open('GET', url);
     connect.onload = function() {
         var wikiObject = JSON.parse(this.response);
@@ -181,9 +185,16 @@ function wikiAPI() {
         var pages = wikiObject.query.pages;
         for (var i in pages) {
             var newDiv = document.createElement("div");
+            var newLink = document.createElement("a");
             newDiv.setAttribute('class', 'row h4');
             document.getElementById("wiki").appendChild(newDiv);
+            document.getElementById("wiki").appendChild(newLink);
             newDiv.innerText = pages[i].title;
+
+            var linkText = document.createTextNode(pages[i].title);
+            newLink.appendChild(linkText);
+            newLink.title = pages[i].title;
+            newLink.href = "https: //en.wikipedia.org/?curid=" + pages[i].pageid;
         };
     }
     connect.send();
