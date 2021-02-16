@@ -88,7 +88,8 @@
 
     <!-- title -->
     <h1 class="text-center mt-4 mb-4" style="color: #7c1e0e;">Digital Chalkboard Exercises</h1>
-    <div id="addElements"></div>
+    <!-- Creating HTML Elements programmatically using JS -->
+    <div class="mb-4" id="addElements"></div>
 
     <!-- blockquote -->
     <blockquote class="blockquote text-center">
@@ -227,7 +228,7 @@
                 </div> -->
             </div>
         </form>
-        <button type="submit" class="btn btn-primary my-3" onclick="searchMusic()">Search</button>
+        <button type="submit" class="btn btn-secondary my-3" onclick="searchMusic()">Search</button>
         <div class="container" id="music">
             <div class="row">
                 <!-- <div class="col">
@@ -242,13 +243,17 @@
     </div>
 
     <!-- JS buttons -->
-    <div class="container mt-2 ">
-        <button type="button " class="btn " style="color: #7c1e0e; border-color: #7c1e0e; border-radius: 8px; " onclick="currentMinute() ">Get the Current Minute</button>
-        <p style="display: inline-block; padding-left: 10px; "><span id="datetime "></span></p>
+    <div class="container mt-4">
+        <button type="button" class="btn" style="color: #7c1e0e; border-color: #7c1e0e; border-radius: 8px;" onclick="currentMinute() ">Get the Current Minute</button>
+        <p style="display: inline-block; padding-left: 10px;"><span id="datetime"></span></p>
+    </div>
+    <div class="container mt-4">
+        <button type="button" class="btn" style="color: white; background-color: #7c1e0e;" onclick="lastItem(['Orange', 'Apple', 'Mango', 'Banana', 'Papaya']) ">Sort Array Items</button>
+        <p id="fruit" style="display: inline-block; padding-left: 10px;"></p>
     </div>
     <div class="container mt-4 ">
-        <button type="button " class="btn " style="color: white; background-color: #7c1e0e; " onclick="lastItem([ 'Orange', 'Apple', 'Mango', 'Banana', 'Papaya']) ">Sort Array Items</button>
-        <p id="fruit " style="display: inline-block; padding-left: 10px; "></p>
+        <button type="button " class="btn " style="color: white; background-color: #7c1e0e; " onclick="parseArray() ">New Array</button>
+        <p id="item" style="display: inline-block; padding-left: 10px; "></p>
     </div>
 
     <div class="container mt-4 mb-4 ">
