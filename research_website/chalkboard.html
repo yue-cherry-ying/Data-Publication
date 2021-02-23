@@ -255,8 +255,27 @@
         <button type="button " class="btn " style="color: white; background-color: #7c1e0e; " onclick="parseArray() ">Parse Array</button>
         <p id="array" style="display: inline-block; padding-left: 10px; "></p>
     </div>
+    <div class="container mt-3">
+        <div id="title">Update Words</div>
+        <!-- user input field -->
+        <form>
+            <div class="row ">
+                <div class="col ">
+                    <input id="newWord" type="text " class="form-control " placeholder="Enter your search word here... ">
+                </div>
+            </div>
+        </form>
+        <!-- button to submit search value and invoke JS function -->
+        <button type="submit " class="btn btn-dark my-3 " onclick="update() ">Update Word (Only If Longer)</button>
+        <!-- output from JS function loads here -->
+        <div class="container" id="long-word"></div>
+        <!-- <div>
+            <span>Current Word: </span>
+            <span id="long-word"></span>
+        </div> -->
+    </div>
 
-    <div class="container mt-4 mb-4 ">
+    <div class=" container mt-4 mb-4 ">
         <button type="button " class="btn " style="color: white; background-color: #7c1e0e; " onclick=" greeting( 'Cherry') ">Greetings!</button>
         <button type="button " class="btn " style="color: white; background-color: #7c1e0e; " onclick="conditional() ">Conditional</button>
         <button type="button " class="btn " style="color: white; background-color: #7c1e0e; " onclick="variable() ">Variable</button>
@@ -268,24 +287,24 @@
     </div>
 
     <!-- Wiki API -->
-    <div class="container mt-3">
-        <div id="title">Wiki API Example</div>
+    <div class="container mt-3 ">
+        <div id="title ">Wiki API Example</div>
         <!-- user input field -->
         <form>
-            <div class="row">
-                <div class="col">
-                    <input id="searchTerm" type="text" class="form-control" placeholder="Enter your search term here...">
+            <div class="row ">
+                <div class="col ">
+                    <input id="searchTerm " type="text " class="form-control " placeholder="Enter your search term here... ">
                 </div>
             </div>
         </form>
         <!-- button to submit search value and invoke JS function -->
-        <button type="submit" class="btn btn-dark my-3" onclick="wikiAPI()">Search</button>
+        <button type="submit " class="btn btn-dark my-3 " onclick="wikiAPI() ">Search</button>
         <!-- output from JS function loads here -->
-        <div class="container" id="wiki"></div>
+        <div class="container " id="wiki "></div>
     </div>
 
     <!-- footer -->
-    <footer id="foot " class="d-none d-md-block text-white py-6 p-5 " style="background-color: #7c1e0e; ">
+    <footer id="foot" class="d-none d-md-block text-white py-6 p-5 " style="background-color: #7c1e0e; ">
         <div class="container-fluid footer-container ">
             <div class="row ">
                 <div class="col-md-2 offset-md-1 col-8 offset-2 mb-1 ">
@@ -337,9 +356,9 @@
             </div>
         </div>
     </footer>
-    <footer class="d-none d-md-block text-center p-3 text-light " style="background-color: #7c1e0e; font-family: 'Oswald', sans-serif; text-transform: uppercase; ">
+    <!-- <footer id="footer" class="d-none d-md-block text-center p-3 text-light " style="background-color: #7c1e0e; font-family: 'Oswald', sans-serif; text-transform: uppercase; ">
         © 2021 Copyright
-    </footer>
+    </footer> -->
 </body>
 
 </html>

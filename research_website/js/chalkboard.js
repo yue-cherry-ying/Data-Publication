@@ -94,6 +94,15 @@ function parseArray() {
         ". I lowered all the letters and sorted them alphabetically: " + x
 }
 
+function update() {
+    var newWord = document.getElementById("newWord").value.trim();
+    var currentWordLength = document.getElementById("long-word").innerHTML.length;
+    if (newWord.length > currentWordLength) {
+        document.getElementById("long-word").innerHTML = newWord;
+    }
+    document.getElementById("newWord").value = "";
+}
+
 function greeting(firstName) {
     alert("Hello " + firstName);
 }
@@ -159,7 +168,7 @@ function scopeValues() {
 }
 
 function disappear() {
-    let selectedElement = document.getElementById("footer");
+    let selectedElement = document.getElementById("foot");
     selectedElement.style.visibility = "hidden";
 }
 
