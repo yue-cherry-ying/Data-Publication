@@ -199,3 +199,35 @@ function wikiAPI() {
     }
     connect.send();
 }
+
+// Alternative Way to create the wikiAPI() function
+/* function wikiAPI() {
+var parentDiv = document.getElementById('wiki');
+removeResults(parentDiv)
+var searchTerm = document.getElementById('searchTerm').value;
+var connect = new XMLHttpRequest();
+var url = "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&generator=search&gsrnamespace=0&gsrlimit=20&gsrsearch=" + searchTerm;
+
+connect.open('GET', url);
+
+connect.onload = function() {
+    var wikiObject = JSON.parse(this.response);
+    var pages = wikiObject.query.pages;
+    for (i in pages) {
+        // basic function
+        // var newDiv = document.createElement("div");
+        // newDiv.setAttribute('class', 'row h4');
+        // document.getElementById("wiki").appendChild(newDiv);
+        // newDiv.innerText = pages[i].title;
+
+        // super challenge
+        var pageURL = "https: //en.wikipedia.org/?curid="
+        var newAnchor = document.createElement("a");
+        newAnchor.href = pageURL + pages[i].pageid; //setAttribute('href', pageURL+page[i].pageid);
+        newAnchor.className = 'd-block'; //setAttribute('class', 'd-block');
+        newAnchor.innerText = pages[i].title;
+        document.getElementById("wiki").appendChild(newAnchor);
+    };
+}
+connect.send();
+}*/
