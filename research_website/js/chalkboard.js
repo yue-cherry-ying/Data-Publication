@@ -211,8 +211,6 @@ function wikiAPI() {
 
 // Alternative Way to create the wikiAPI() function
 /* function wikiAPI() {
-var parentDiv = document.getElementById('wiki');
-removeResults(parentDiv)
 var searchTerm = document.getElementById('searchTerm').value;
 var connect = new XMLHttpRequest();
 var url = "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&generator=search&gsrnamespace=0&gsrlimit=20&gsrsearch=" + searchTerm;
