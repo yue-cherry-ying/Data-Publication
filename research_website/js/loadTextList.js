@@ -55,11 +55,12 @@ function listTexts(sourceXML) {
         // for (i = 0; i < links.length; i++) {
         //     var td3 = document.createElement('td');
         //     td3.setAttribute('id', 'td_photo_' + i);
+        //     var a = document.createElement('a');
         //     var url = "http://ochre.lib.uchicago.edu/ochre?uuid=" + links.children[i].attributes[1].nodeValue;
-        //     td3.setAttribute('href', XMLrequest(url));
+        //     a.setAttribute('href', XMLrequest(url));
         //     td3.textContent = links.children[i].innerHTML;
+        //     document.getElementById('row_' + i).appendChild(a);
         //     document.getElementById('row_' + i).appendChild(td3);
         // }
-
     }
 }
