@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="aquarium.xsl"?>
+
+<aquarium xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="AquariumSchema.xsd" lang="en">
+    <tank n="0">
+        <tankName>Oceanic environment</tankName>
+        <waterType>Saltwater</waterType>
+        <fishInventory>
+            <fish n="0">
+                <nickname>Jaws</nickname>
+                <taxon>Shark</taxon>
+                <birthday>2007-10-23</birthday>
+            </fish>
+            <fish n="1">
+                <nickname>RayRay</nickname>
+                <taxon>Ray</taxon>
+                <birthday>2012-08-06</birthday>
+            </fish>
+            <fish n="2">
+                <nickname>Slick</nickname>
+                <taxon>Eel</taxon>
+                <birthday>2018-01-23</birthday>
+            </fish>
+        </fishInventory>
+        <supervisors>
+            <supervisor n="0">
+                <lastName>Lam</lastName>
+                <firstName>Joseph</firstName>
+                <shift n="1">First</shift>
+            </supervisor>
+            <supervisor n="1">
+                <lastName>Walton</lastName>
+                <firstName>John</firstName>
+                <shift n="2">Second</shift>
+            </supervisor>
+            <supervisor n="2">
+                <lastName>Young</lastName>
+                <firstName>Kim</firstName>
+                <shift n="3">Third</shift>
+            </supervisor>
+        </supervisors>
+    </tank>
+    <tank n="1">
+        <tankName>River system</tankName>
+        <waterType>Freshwater</waterType>
+        <fishInventory>
+            <fish n="3">
+                <nickname>Pearl</nickname>
+                <taxon>Clam</taxon>
+                <birthday>1988-02-28</birthday>
+            </fish>
+            <fish n="4">
+                <nickname>Pinchy</nickname>
+                <taxon>Perch</taxon>
+                <birthday>2014-09-29</birthday>
+            </fish>
+            <fish n="5">
+                <nickname>Kitty</nickname>
+                <taxon>Catfish</taxon>
+                <birthday>2019-05-12</birthday>
+            </fish>
+        </fishInventory>
+        <supervisors>
+            <supervisor n="6">
+                <lastName>Strass</lastName>
+                <firstName>Theresa</firstName>
+                <shift n="1">First</shift>
+            </supervisor>
+            <supervisor n="7">
+                <lastName>Eck</lastName>
+                <firstName>Emily</firstName>
+                <shift n="2">Second</shift>
+            </supervisor>
+            <supervisor n="8">
+                <lastName>Davies</lastName>
+                <firstName>Robert</firstName>
+                <shift n="3">Third</shift>
+            </supervisor>
+        </supervisors>
+    </tank>
+    <tank n="2">
+        <tankName>Estuary environment</tankName>
+        <waterType>Brackish</waterType>
+        <fishInventory>
+            <fish n="6">
+                <nickname>Prince</nickname>
+                <taxon>Goby</taxon>
+                <birthday>2018-03-03</birthday>
+            </fish>
+            <fish n="7">
+                <nickname>Chomper</nickname>
+                <taxon>Cichlid</taxon>
+                <birthday>2014-07-14</birthday>
+            </fish>
+            <fish n="8">
+                <nickname>Pointy</nickname>
+                <taxon>Pufferfish</taxon>
+                <birthday>2019-01-03</birthday>
+            </fish>
+        </fishInventory>
+        <supervisors>
+            <supervisor n="9">
+                <lastName>Ellsworth</lastName>
+                <firstName>Erica</firstName>
+                <shift n="1">First</shift>
+            </supervisor>
+            <supervisor n="10">
+                <lastName>Fields</lastName>
+                <firstName>Daniel</firstName>
+                <shift n="2">Second</shift>
+            </supervisor>
+            <supervisor n="11">
+                <lastName>Wong</lastName>
+                <firstName>David</firstName>
+                <shift n="3">Third</shift>
+            </supervisor>
+        </supervisors>
+    </tank>
+    <tank n="3">
+        <tankName>New Tank</tankName>
+        <waterType>Brackish</waterType>
+        <fishInventory>
+            <fish n="9">
+                <nickname>NewKid</nickname>
+                <taxon>TrumpetFish</taxon>
+                <birthday>2010-01-05</birthday>
+            </fish>
+        </fishInventory>
+        <supervisors>
+            <supervisor n="12">
+                <lastName>Amberton</lastName>
+                <firstName>Juan</firstName>
+                <shift n="1">First</shift>
+            </supervisor>
+        </supervisors>
+    </tank>
+    
+</aquarium>
+
+
+
