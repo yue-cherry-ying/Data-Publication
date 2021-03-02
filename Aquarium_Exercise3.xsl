@@ -9,13 +9,15 @@
             </body>
         </html>
     </xsl:template>
-    <xsl:template match="supervisors">
-        <xsl:for-each select="supervisor">
-            <xsl:sort select="./shift" order="ascending"/>
-            <xsl:if test="shift = 'First' or shift = 'Second'">
-                <xsl:value-of select="lastName"/><xsl:text>: </xsl:text>
-                <xsl:value-of select="shift"/><br/>
-            </xsl:if>
+    <xsl:template match="tank">
+        <xsl:for-each select="supervisors">
+            <xsl:sort select="supervisors/supervisor/shift" order="ascending"/>
+            <xsl:for-each select="supervisor">
+                <xsl:if test="shift = 'First' or shift = 'Second'">
+                    <xsl:value-of select="lastName"/><xsl:text>: </xsl:text>
+                    <xsl:value-of select="shift"/><br/>
+                </xsl:if>
+            </xsl:for-each>
         </xsl:for-each>
     </xsl:template>
 </xsl:stylesheet>
