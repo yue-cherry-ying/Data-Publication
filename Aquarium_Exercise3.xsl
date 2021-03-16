@@ -11,8 +11,8 @@
     </xsl:template>
     <xsl:template match="tank">
         <xsl:for-each select="supervisors">
-            <xsl:sort select="supervisors/supervisor/shift" order="ascending"/>
             <xsl:for-each select="supervisor">
+                <xsl:sort select="supervisor/shift" order="ascending"/>
                 <xsl:if test="shift = 'First' or shift = 'Second'">
                     <xsl:value-of select="lastName"/><xsl:text>: </xsl:text>
                     <xsl:value-of select="shift"/><br/>
